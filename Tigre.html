@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tigre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://mymodernmet.com/wp/wp-content/uploads/2020/08/tiger-1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad para desvanecer el fondo */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .info img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="zoologico.html" class="back-button">Regresar al Zoológico</a>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="info">
+            <h2>Tigre</h2>
+            <img src="https://s1.eestatic.com/2023/07/29/ciencia/782681856_235038553_1706x960.jpg" alt="Tigre" width="300" height="200">
+            <p>El tigre (Panthera tigris) es una de las especies de la subfamilia de los panterinos (familia Felidae) pertenecientes al género Panthera. Se encuentra solamente en el continente asiático; es un predador carnívoro y es la especie de félido más grande del mundo junto con el león, pudiendo alcanzar ambos un tamaño comparable al de los fósiles de félidos de mayor tamaño.</p>
+            <audio controls autoplay>
+                <source src="sonidos/tigre.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>

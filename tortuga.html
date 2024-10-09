@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortuga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://www.prensalibre.com/wp-content/uploads/2022/07/6a65ad89-ec76-43a4-9eac-6fb8ae677d2a.jpg?quality=52");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad para desvanecer el fondo */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .info img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="zoologico.html" class="back-button">Regresar al Zoológico</a>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="info">
+            <h2>Tortuga</h2>
+            <img src="https://concepto.de/wp-content/uploads/2020/04/tortuga-e1588195737163-800x400.jpg" alt="Tortuga" width="300" height="200">
+            <p>Las tortugas, también conocidas como quelonios, son reptiles que se caracterizan por su caparazón sólido que protege sus órganos vitales. Este caparazón está formado por dos partes: el caparazón superior, llamado el 'carapacho', y la parte inferior, conocida como el 'plastrón'. Las tortugas tienen un cuerpo adaptado a la vida acuática o terrestre, dependiendo de la especie.</p>
+            <p>Estas criaturas pueden encontrarse en una variedad de hábitats, desde océanos y ríos hasta bosques y desiertos. Las tortugas marinas, por ejemplo, pasan la mayor parte de su vida en el agua, mientras que las tortugas terrestres viven en ambientes terrestres. A pesar de sus diferencias, todas las tortugas comparten el rasgo distintivo del caparazón que las protege de los depredadores.</p>
+            <p>Las tortugas son ovíparas y ponen sus huevos en nidos que cavan en la arena o en la tierra. La incubación de los huevos puede durar varias semanas, y las crías emergen del nido y se dirigen hacia el agua en el caso de las tortugas marinas. Las tortugas tienen una longevidad notable, con algunas especies viviendo más de 50 años.</p>
+            <p>Además, las tortugas tienen un metabolismo lento y una tasa de crecimiento baja, lo que les permite adaptarse a condiciones adversas y sobrevivir en entornos cambiantes. Su dieta varía ampliamente según la especie, desde algas y medusas en tortugas marinas hasta plantas y pequeños insectos en tortugas terrestres.</p>
+            <audio controls autoplay>
+                <source src="sonidos/tortuga.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
+

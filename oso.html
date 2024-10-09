@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://www.ngenespanol.com/wp-content/uploads/2023/01/Grizzly_Bear-_Sow_and_cubs_5728173840-Grande-770x550.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad para desvanecer el fondo */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .info img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="zoologico.html" class="back-button">Regresar al Zoológico</a>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="info">
+            <h2>Oso</h2>
+            <img src="https://cnnespanol.cnn.com/wp-content/uploads/2021/11/oso-Bart.jpg?quality=100&strip=info" alt="Oso" width="300" height="200">
+            <p>Los osos son mamíferos de gran tamaño que pertenecen a la familia Ursidae. Se caracterizan por su cuerpo robusto y sus patas cortas, con garras fuertes adaptadas para cavar y trepar. Su cabeza es grande con orejas pequeñas y redondeadas. Dependiendo de la especie, los osos pueden variar en tamaño desde el pequeño oso panda hasta el enorme oso polar.</p>
+            <p>Los osos tienen una dieta variada que incluye frutas, nueces, insectos, y en algunos casos, carne. Son conocidos por su habilidad para hibernar durante el invierno, cuando entran en un estado de letargo para conservar energía y sobrevivir a la escasez de alimentos.</p>
+            <p>Existen ocho especies principales de osos, incluyendo el oso grizzly, el oso negro, el oso pardo, el oso polar, el oso panda, el oso andino, el oso malayo, y el oso de anteojos. Cada especie tiene adaptaciones únicas para su entorno y dieta. Por ejemplo, el oso panda se alimenta principalmente de bambú, mientras que el oso polar está adaptado para la vida en el Ártico con su grueso pelaje y su capacidad para nadar largas distancias.</p>
+            <p>Los osos juegan un papel importante en sus ecosistemas como depredadores y dispersadores de semillas. La conservación de las diferentes especies de osos es crucial para mantener el equilibrio de los hábitats naturales en los que viven.</p>
+            <audio controls autoplay>
+                <source src="sonidos/oso.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
+

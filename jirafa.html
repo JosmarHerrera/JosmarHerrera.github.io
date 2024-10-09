@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jirafa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://cdn0.bioenciclopedia.com/es/posts/2/2/0/jirafa_22_orig.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad para desvanecer el fondo */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .info img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="zoologico.html" class="back-button">Regresar al Zoológico</a>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="info">
+            <h2>Jirafa</h2>
+            <img src="https://www.nationalgeographic.com.es/medio/2023/06/20/jirafa_b44da8ba_230620124433_800x800.jpg" alt="Jirafa" width="300" height="200">
+            <p>La jirafa (Giraffa camelopardalis) es el mamífero terrestre más alto del mundo, con una altura que puede alcanzar hasta 6 metros. Esta impresionante altura es posible gracias a su cuello largo, que en promedio mide entre 1.8 y 2.4 metros, y a sus patas delanteras, que son más largas que las traseras.</p>
+            <p>Las jirafas tienen un patrón de manchas único en su piel, que puede variar en forma y color dependiendo de la subespecie. Este patrón no solo es distintivo, sino que también ayuda a camuflarse en su entorno natural, proporcionando una forma de protección contra los depredadores.</p>
+            <p>Las jirafas se alimentan principalmente de hojas de árboles, especialmente de acacias, y utilizan su lengua prehensil, que puede medir hasta 45 cm, para alcanzar las hojas más altas. Su dieta también puede incluir brotes y flores. Para beber agua, las jirafas deben extender sus patas delanteras para alcanzar el suelo, lo que las hace vulnerables a los ataques de depredadores.</p>
+            <p>Además de su tamaño imponente, las jirafas son conocidas por su comportamiento social. Viven en grupos fluidos llamados torres, que pueden variar en tamaño y composición. A pesar de su tamaño, las jirafas pueden correr a velocidades de hasta 35 km/h en distancias cortas, lo que les ayuda a escapar de los depredadores.</p>
+            <audio controls autoplay>
+                <source src="sonidos/jirafa.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>

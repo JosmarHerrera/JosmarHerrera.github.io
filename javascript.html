@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="software.png">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Introducción a JavaScript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Qué es JavaScript?</h2>
+            <p>JavaScript es un lenguaje de programación que permite agregar interactividad a las páginas web. Con
+                JavaScript, puedes hacer que los elementos reaccionen a las acciones del usuario, como clics,
+                desplazamientos y formularios.</p>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="js1.jpg" alt="">
+        </div>
+
+        <section>
+            <h2>¿Cómo funciona JavaScript?</h2>
+            <p>JavaScript puede ejecutarse directamente en el navegador, sin necesidad de ningún software adicional. Se
+                puede insertar directamente en el HTML usando la etiqueta <code>&lt;script&gt;</code> o mediante un
+                archivo JavaScript externo.</p>
+            <p>JavaScript se ejecuta en el lado del cliente, lo que significa que el código se procesa en el navegador
+                del usuario.</p>
+        </section>
+        <section>
+            <h2>Tipos de datos en JavaScript</h2>
+            <p>JavaScript tiene varios tipos de datos:</p>
+            <ul>
+                <li><strong>String:</strong> Cadenas de texto (por ejemplo, "Hola Mundo")</li>
+                <li><strong>Number:</strong> Números (por ejemplo, 42)</li>
+                <li><strong>Boolean:</strong> Verdadero o falso (true o false)</li>
+                <li><strong>Array:</strong> Lista de valores (por ejemplo, [1, 2, 3])</li>
+                <li><strong>Object:</strong> Colección de propiedades (por ejemplo, { nombre: "Josmar", edad: 25 })</li>
+                <li><strong>Null:</strong> Valor nulo, representa la ausencia de valor.</li>
+                <li><strong>Undefined:</strong> Variable no definida.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Funciones JavaScript comunes</h2>
+            <ul>
+                <li><code>alert()</code>: Muestra una alerta emergente.</li>
+                <li><code>console.log()</code>: Muestra mensajes en la consola del navegador.</li>
+                <li><code>document.getElementById()</code>: Selecciona un elemento HTML por su ID.</li>
+                <li><code>addEventListener()</code>: Añade un evento a un elemento.</li>
+                <li><code>parseInt()</code>: Convierte una cadena a un número entero.</li>
+                <li><code>parseFloat()</code>: Convierte una cadena a un número de punto flotante.</li>
+                <li><code>Math.random()</code>: Devuelve un número aleatorio entre 0 y 1.</li>
+                <li><code>Math.floor()</code>: Redondea un número hacia abajo.</li>
+            </ul>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="js33.jpg" alt="">
+        </div>
+
+        <section>
+            <h2>Ejemplo de JavaScript</h2>
+            <p>Este es un ejemplo de cómo usar JavaScript para mostrar una alerta al hacer clic en un botón:</p>
+            <pre><code>
+&lt;button onclick="saludar()"&gt;Haz clic aquí&lt;/button&gt;
+
+&lt;script&gt;
+    function saludar() {
+        alert("¡Hola, bienvenido!");
+    }
+&lt;/script&gt;
+            </code></pre>
+        </section>
+        <section>
+            <h2>Estructuras de control</h2>
+            <p>JavaScript incluye estructuras de control como:</p>
+            <ul>
+                <li><strong>Condicionales:</strong>
+                    <pre><code>
+if (condición) {
+    // código a ejecutar si la condición es verdadera
+} else {
+    // código a ejecutar si la condición es falsa
+}
+                    </code></pre>
+                </li>
+                <li><strong>Bucles:</strong>
+                    <pre><code>
+for (let i = 0; i &lt; 5; i++) {
+    console.log(i);
+}
+
+while (condición) {
+    // código a ejecutar mientras la condición sea verdadera
+}
+                    </code></pre>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Manipulación del DOM</h2>
+            <p>JavaScript permite manipular el Document Object Model (DOM) de la página:</p>
+            <ul>
+                <li><code>document.createElement()</code>: Crea un nuevo elemento HTML.</li>
+                <li><code>appendChild()</code>: Agrega un nuevo nodo como hijo de un nodo existente.</li>
+                <li><code>removeChild()</code>: Elimina un hijo de un nodo.</li>
+                <li><code>innerHTML</code>: Permite modificar el contenido HTML de un elemento.</li>
+            </ul>
+            <br>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="js22.png" alt="">
+        </div>
+
+        <section>
+            <h2>Hey, ¡Visita este curso en Youtube para saber más de JavaScript! 🤨</h2>
+            <div style="margin-bottom: 30px; text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3oSeQb94Ga4?si=6z03QcTFWFz3C5I0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>            
+        </section>        
+    </main>
+
+    <footer>
+        <p>Página Web elaborada por:</p>
+        <p>&copy; Josmar Caleb Herrera Francisco</p>
+        <p>&copy; Lizzie Guadalupe Arciniega Romero</p>
+    </footer>
+
+</body>
+
+</html>

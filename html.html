@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende HTML</title>
+    <link rel="icon" type="image/png" href="software.png">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Introducción a HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Qué es HTML?</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para crear la estructura básica de
+                una página web. Todas las páginas web utilizan HTML para definir elementos como párrafos, enlaces,
+                imágenes y otros componentes.</p>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="html1.png" alt="">
+        </div>
+
+        <section>
+            <h2>Estructura básica de un documento HTML</h2>
+            <p>Un documento HTML básico contiene las siguientes partes:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Encabezado principal&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <!-- Tabla de etiquetas de estructura -->
+        <section>
+            <h2>Etiquetas de estructura</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;html&gt;</code></td>
+                        <td>Define el documento HTML</td>
+                        <td><code>&lt;html lang="es"&gt;...&lt;/html&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;head&gt;</code></td>
+                        <td>Define información sobre el documento</td>
+                        <td><code>&lt;head&gt;...&lt;/head&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;body&gt;</code></td>
+                        <td>Define el cuerpo del documento</td>
+                        <td><code>&lt;body&gt;...&lt;/body&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td>Define un encabezado para un documento o sección</td>
+                        <td><code>&lt;header&gt;...&lt;/header&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;footer&gt;</code></td>
+                        <td>Define un pie de página para un documento o sección</td>
+                        <td><code>&lt;footer&gt;...&lt;/footer&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>Define una sección en un documento</td>
+                        <td><code>&lt;section&gt;...&lt;/section&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td>Define contenido independiente y autosuficiente</td>
+                        <td><code>&lt;article&gt;...&lt;/article&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;aside&gt;</code></td>
+                        <td>Define contenido aparte del contenido principal</td>
+                        <td><code>&lt;aside&gt;...&lt;/aside&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td>Define enlaces de navegación</td>
+                        <td><code>&lt;nav&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/nav&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td>Define el contenido principal del documento</td>
+                        <td><code>&lt;main&gt;...&lt;/main&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabla de etiquetas de texto -->
+        <section>
+            <h2>Etiquetas de texto</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Define un párrafo</td>
+                        <td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h1&gt; a &lt;h6&gt;</code></td>
+                        <td>Define encabezados HTML (de mayor a menor importancia)</td>
+                        <td><code>&lt;h1&gt;Título&lt;/h1&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;strong&gt;</code></td>
+                        <td>Define texto importante (en negrita)</td>
+                        <td><code>&lt;strong&gt;Texto importante&lt;/strong&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;em&gt;</code></td>
+                        <td>Define texto enfatizado (en cursiva)</td>
+                        <td><code>&lt;em&gt;Texto enfatizado&lt;/em&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;b&gt;</code></td>
+                        <td>Define texto en negrita</td>
+                        <td><code>&lt;b&gt;Texto en negrita&lt;/b&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;i&gt;</code></td>
+                        <td>Define texto en cursiva</td>
+                        <td><code>&lt;i&gt;Texto en cursiva&lt;/i&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;small&gt;</code></td>
+                        <td>Define texto pequeño</td>
+                        <td><code>&lt;small&gt;Texto pequeño&lt;/small&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;mark&gt;</code></td>
+                        <td>Define texto resaltado</td>
+                        <td><code>&lt;mark&gt;Texto resaltado&lt;/mark&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;blockquote&gt;</code></td>
+                        <td>Define una sección citada de otra fuente</td>
+                        <td><code>&lt;blockquote&gt;Texto citado&lt;/blockquote&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;q&gt;</code></td>
+                        <td>Define una cita corta</td>
+                        <td><code>&lt;q&gt;Texto de cita&lt;/q&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;pre&gt;</code></td>
+                        <td>Define texto preformateado</td>
+                        <td><code>&lt;pre&gt;Texto preformateado&lt;/pre&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabla de etiquetas multimedia -->
+        <section>
+            <h2>Etiquetas multimedia</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Define una imagen</td>
+                        <td><code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;audio&gt;</code></td>
+                        <td>Define contenido de sonido</td>
+                        <td><code>&lt;audio controls&gt;...&lt;/audio&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;video&gt;</code></td>
+                        <td>Define un video embebido</td>
+                        <td><code>&lt;video controls&gt;...&lt;/video&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;source&gt;</code></td>
+                        <td>Define un recurso multimedia para <code>&lt;video&gt;</code> o <code>&lt;audio&gt;</code>
+                        </td>
+                        <td><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;track&gt;</code></td>
+                        <td>Define texto de pista para medios</td>
+                        <td><code>&lt;track kind="subtitles" src="subtitulos.vtt" srclang="es"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;canvas&gt;</code></td>
+                        <td>Utilizado para gráficos de dibujo</td>
+                        <td><code>&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabla de etiquetas de listas -->
+        <section>
+            <h2>Etiquetas de listas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;ul&gt;</code></td>
+                        <td>Define una lista desordenada</td>
+                        <td><code>&lt;ul&gt;&lt;li&gt;Elemento 1&lt;/li&gt;&lt;li&gt;Elemento 2&lt;/li&gt;&lt;/ul&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;ol&gt;</code></td>
+                        <td>Define una lista ordenada</td>
+                        <td><code>&lt;ol&gt;&lt;li&gt;Elemento 1&lt;/li&gt;&lt;li&gt;Elemento 2&lt;/li&gt;&lt;/ol&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;li&gt;</code></td>
+                        <td>Define un elemento en una lista</td>
+                        <td><code>&lt;li&gt;Elemento de lista&lt;/li&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;dl&gt;</code></td>
+                        <td>Define una lista de descripción</td>
+                        <td><code>&lt;dl&gt;&lt;dt&gt;Término&lt;/dt&gt;&lt;dd&gt;Descripción del término&lt;/dd&gt;&lt;/dl&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;dt&gt;</code></td>
+                        <td>Define un término en una lista de descripción</td>
+                        <td><code>&lt;dt&gt;Término&lt;/dt&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;dd&gt;</code></td>
+                        <td>Define una descripción en una lista de descripción</td>
+                        <td><code>&lt;dd&gt;Descripción del término&lt;/dd&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabla de etiquetas de formularios -->
+        <section>
+            <h2>Etiquetas de formularios</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;form&gt;</code></td>
+                        <td>Define un formulario HTML para entrada del usuario</td>
+                        <td><code>&lt;form action="submit.php"&gt;...&lt;/form&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;input&gt;</code></td>
+                        <td>Define un control de entrada</td>
+                        <td><code>&lt;input type="text" name="nombre"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;textarea&gt;</code></td>
+                        <td>Define un área de texto multirenglón</td>
+                        <td><code>&lt;textarea&gt;Texto aquí&lt;/textarea&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;button&gt;</code></td>
+                        <td>Define un botón clicable</td>
+                        <td><code>&lt;button&gt;Enviar&lt;/button&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;label&gt;</code></td>
+                        <td>Define un rótulo para un elemento en un formulario</td>
+                        <td><code>&lt;label for="nombre"&gt;Nombre&lt;/label&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;select&gt;</code></td>
+                        <td>Define un control de menú desplegable</td>
+                        <td><code>&lt;select&gt;&lt;option&gt;Opción 1&lt;/option&gt;&lt;/select&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;option&gt;</code></td>
+                        <td>Define una opción en un menú desplegable</td>
+                        <td><code>&lt;option&gt;Opción 1&lt;/option&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;fieldset&gt;</code></td>
+                        <td>Agrupa controles relacionados en un formulario</td>
+                        <td><code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;legend&gt;</code></td>
+                        <td>Define un título para el elemento <code>&lt;fieldset&gt;</code></td>
+                        <td><code>&lt;legend&gt;Título del formulario&lt;/legend&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Ejemplo de HTML en acción</h2>
+            <p>El siguiente es un ejemplo de una pequeña página HTML:</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi primera página web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bienvenidos a mi página web&lt;/h1&gt;
+    &lt;p&gt;Esto es un párrafo de ejemplo.&lt;/p&gt;
+    &lt;a href="https://www.google.com"&gt;Visitar Google&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Comentarios en HTML</h2>
+            <p>Para hacer un comentario en HTML utilizamos la estructura " <code>&lt;!--- (Texto) ---&gt;</code> ", los
+                comentarios sirven para ayudarnos a nosotros como programador o a las personas que leen nuestro código,
+                teniendo una breve descripción. Los comentarios no se ejecutan ni se muestran en la página web.
+            </p>
+        </section>
+
+        <section>
+            <h2>¿Dónde es más recomendado programar en HTML5?</h2>
+            <p>La herramienta que se recomienda utilizar para programar HTML es un editor de texto llamado "Visual Studio Code", esta proporciona compatibilidad básica con la programación HTML lista para usar. Hay resaltado de sintaxis, finalizaciones inteligentes con IntelliSense y formato personalizable. VS Code también incluye un gran soporte de Emmet.
+            </p>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="html22.png" alt="">
+        </div>
+
+        <section>
+            <h2>Para saber más, ¡Visita este curso en Youtube sobre HTML5! 😎</h2>
+            <div style="margin-bottom: 30px; text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QwMlgfMK6fQ?si=2uLjK9zyCqzwlZvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p>Página Web elaborada por:</p>
+        <p>&copy; Josmar Caleb Herrera Francisco</p>
+        <p>&copy; Lizzie Guadalupe Arciniega Romero</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoológico</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .animal-image {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .animal-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #3498db;
+            border: none;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .animal-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <table class="tablaE">
+          <tr>
+            <td style="text-align: left;">
+              <a href="index.html">Regresar</a>
+            </td>
+            <td colspan="3" style="text-align: center;">
+             
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    <h1>Zoológico</h1>
+    <img class="animal-image" src="https://img.freepik.com/vector-gratis/animales-zoologico-fondo-naturaleza-salvaje_1308-44197.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1708300800&semt=sph" alt="Animales en el zoológico">
+    
+    <nav>
+        <!-- Enlaces de los animales -->
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('leon.html')">León</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('tigre.html')">Tigre</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('mono.html')">Mono</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('elefante.html')">Elefante</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('jirafa.html')">Jirafa</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('oso.html')">Oso</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('pinguino.html')">Pingüino</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('delfin.html')">Delfín</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('tortuga.html')">Tortuga</a>
+        <a class="animal-link" href="javascript:void(0);" onclick="openAnimal('aguila.html')">Águila</a>
+    </nav>
+
+    <script>
+        function openAnimal(url) {
+            window.location.href = url; // Redirige a la URL en la misma pestaña
+        }
+    </script>
+</body>
+
+</html>

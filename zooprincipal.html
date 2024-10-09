@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zoológico</title>
+    <style>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5v805BMchUEgKYZGJ_RX_v4DlYEO4dDohw&s");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        z-index: 1;
+      }
+
+      .header .tablaE {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .header .tablaE td {
+        padding: 10px;
+      }
+
+      .header a {
+        color: #0066cc;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+
+      .header a:hover {
+        text-decoration: underline;
+      }
+
+      .header h1 {
+        font-family: "Comic Sans MS", cursive;
+        font-size: 45px;
+        margin: 0;
+      }
+
+      .sidebar {
+        position: absolute;
+        font-size: 14px;
+        top: 100px;
+        bottom: -70px;
+        right: 10px;
+        border-radius: 20px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 9px;
+        text-align: center;
+        z-index: 1;
+      }
+
+      .content {
+        position: absolute;
+        font-size: 16px;
+        top: 100px;
+        bottom: -70px;
+        left: 10px;
+        right: 230px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: justify;
+        z-index: 0;
+      }
+
+      .imagen {
+        display: block;
+        margin: 0 auto 20px;
+        border-radius: 20px;
+        width: 40%;
+        height: auto;
+      }
+
+      .video {
+        display: block;
+        margin: 20px auto;
+        width: 30%;
+      }
+
+      .footer {
+        color: black;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <table class="tablaE">
+        <tr>
+          <td style="text-align: left;">
+            <a href="index.html">Regresar</a>
+          </td>
+          <td colspan="3" style="text-align: center;">
+            <h1>Zoológico</h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sidebar">
+      <p>
+        <a href="osopagina.html">¿Quieres saber más de los osos? ¡Haz clic aquí!</a>
+      </p>
+      <img
+        class="imagen"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR49Y-1wdQ4TPJk11TCFyf_eWELxCpZIHRiySTP1YCqqzrTsKz_"
+        alt="Oso"
+      />
+
+      <p>
+        <a href="cocodrilopagina.html">¿Quieres saber más de los cocodrilos? ¡Haz clic aquí!</a>
+      </p>
+      <img
+        class="imagen"
+        src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi9M5z_1stUFVrBBroXz97UiHQxMvRgcMhSPdqEQK6Ixa8a7ik"
+        alt="Cocodrilo"
+      />
+
+      <p>
+        <a href="leonpagina.html">¿Quieres saber más de los leones? ¡Haz clic aquí!</a>
+      </p>
+      <img
+        class="imagen"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/250px-002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+        alt="León"
+      />
+
+      <p>
+        <a href="lobopagina.html">¿Quieres saber más de los lobos? ¡Haz clic aquí!</a>
+      </p>
+      <img
+        class="imagen"
+        src="https://static.nationalgeographicla.com/files/styles/image_3200/public/05_nationalgeographic_2711495.jpg?w=1900&h=1900"
+        alt="Lobo"
+      />
+
+      <p>
+        <a href="manatipagina.html">¿Quieres saber más de los manatíes? ¡Haz clic aquí!</a>
+      </p>
+      <img
+        class="imagen"
+        src="https://i0.wp.com/lopezdoriga.com/wp-content/uploads/2019/07/manati.png?fit=1185%2C696&ssl=1"
+        alt="Manatí"
+      />
+    </div>
+
+    <div class="content">
+      <p class="footer">Creado por Josmar Caleb Herrera Francisco &copy; 2024</p>
+      <p>
+        ¡Bienvenidos al asombroso Zoológico Mágico de la Fauna Exótica!
+        Sumérgete en un viaje inolvidable lleno de maravillas naturales y
+        descubre la diversidad única de nuestro reino animal. Prepárate para
+        vivir experiencias emocionantes mientras exploras hábitats fascinantes
+        de criaturas extraordinarias.
+      </p>
+
+      <img
+        class="imagen"
+        src="https://thumbs.dreamstime.com/b/jirafa-y-mono-tigre-y-tuc%C3%A1n-en-el-parque-zool%C3%B3gico-97748867.jpg"
+        alt="Animales en el zoológico"
+        style="width: 15%; height: auto; margin: 0 auto 20px; display: block;"
+      />
+
+      <p>
+        Desde majestuosos leones hasta adorables pingüinos, nuestro zoológico te
+        lleva en un recorrido global para conocer a los habitantes más
+        sorprendentes de la Tierra. ¡No te pierdas la oportunidad de presenciar
+        espectáculos impresionantes, interactuar con animales amigables y
+        aprender sobre la conservación de especies en peligro de extinción!
+      </p>
+
+      <video class="video" controls muted loop>
+        <source src="multimedia/zooIntro.mp4" type="video/mp4" />
+        Tu navegador no admite el elemento
+        <code>video</code>.
+      </video>
+
+      <p>
+        En el Zoológico Mágico de la Fauna Exótica, cada rincón es una aventura
+        esperando a ser descubierta. ¡Ven y únete a nosotros para un día lleno
+        de risas, aprendizaje y la emoción de estar cerca de criaturas
+        extraordinarias! Nos enorgullece ser tu puerta de entrada a un mundo
+        animal único y mágico. ¡Prepárate para vivir la experiencia de tu vida!
+      </p>
+    </div>   
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingüino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjT7lcbAWh1DpsAXimLT7K49VmsWHYoN8Bxw&s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad para desvanecer el fondo */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .info img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="zoologico.html" class="back-button">Regresar al Zoológico</a>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="info">
+            <h2>Pingüino</h2>
+            <img src="https://t2.ea.ltmcdn.com/es/posts/8/6/7/la_alimentacion_del_pinguino_20768_600.jpg" alt="Pingüino" width="300" height="200">
+            <p>Los pingüinos son aves no voladoras que se han adaptado completamente a la vida en el agua. Habitan principalmente en el hemisferio sur, con la mayoría de las especies encontradas en la Antártida. Su cuerpo está diseñado para la vida acuática, con alas que han evolucionado en aletas rígidas que utilizan para nadar.</p>
+            <p>Su plumaje es denso y cubierto de una capa de grasa que actúa como aislante para mantener su temperatura corporal en las frías aguas del océano. Los pingüinos son excelentes nadadores y pueden alcanzar velocidades de hasta 36 km/h en el agua. A pesar de su habilidad para nadar, en tierra son torpes y caminan de una manera característica, inclinándose hacia adelante.</p>
+            <p>Los pingüinos se alimentan principalmente de peces, calamares y crustáceos. Forman colonias masivas para reproducirse y se cuidan mutuamente, compartiendo las tareas de incubación de huevos y crianza de los polluelos. La mayoría de las especies construyen nidos en las rocas o en el suelo, aunque algunas hacen nidos en árboles o arbustos.</p>
+            <p>Entre las especies más conocidas se encuentran el pingüino emperador, que es el más grande de todos los pingüinos, y el pingüino de Adelia, que es conocido por su apariencia distintiva con un anillo blanco alrededor de los ojos. La conservación de los pingüinos es crucial debido a la amenaza del cambio climático y la pérdida de hábitat.</p>
+            <audio controls autoplay>
+                <source src="sonidos/pinguino.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
+

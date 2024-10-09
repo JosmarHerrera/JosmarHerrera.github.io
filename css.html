@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende CSS</title>
+    <link rel="icon" type="image/png" href="software.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Introducción a CSS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es el lenguaje utilizado para describir el estilo de un documento HTML. Con
+                CSS, puedes cambiar colores, fuentes, márgenes, y muchos otros aspectos visuales de la página web.</p>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="CSS1.png" alt="" style="width: 300px;">
+        </div>
+
+        <section>
+            <h2>Cómo se aplica el CSS</h2>
+            <p>Existen tres maneras principales de aplicar CSS a un documento HTML:</p>
+            <ul>
+                <li><strong>CSS en línea</strong>: Se aplica directamente en la etiqueta HTML con el atributo
+                    <code>style</code>.</li>
+                <li><strong>CSS en el &lt;head&gt;</strong>: Se coloca en el bloque &lt;style&gt; dentro del documento
+                    HTML.</li>
+                <li><strong>Archivo CSS externo</strong>: Se enlaza con la página mediante la etiqueta
+                    <code>&lt;link&gt;</code> en el &lt;head&gt;.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Propiedades CSS comunes</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>color</code></td>
+                        <td>Define el color del texto</td>
+                        <td><code>color: red;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>background-color</code></td>
+                        <td>Define el color de fondo</td>
+                        <td><code>background-color: lightblue;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>font-size</code></td>
+                        <td>Tamaño de la fuente</td>
+                        <td><code>font-size: 16px;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>margin</code></td>
+                        <td>Espacio alrededor del elemento</td>
+                        <td><code>margin: 20px;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>padding</code></td>
+                        <td>Espacio dentro del elemento, alrededor del contenido</td>
+                        <td><code>padding: 10px;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>border</code></td>
+                        <td>Define un borde alrededor de un elemento</td>
+                        <td><code>border: 1px solid black;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>text-align</code></td>
+                        <td>Alineación del texto</td>
+                        <td><code>text-align: center;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>display</code></td>
+                        <td>Tipo de visualización del elemento</td>
+                        <td><code>display: block;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>flex</code></td>
+                        <td>Utilizado para crear un diseño flexible con flexbox</td>
+                        <td><code>display: flex;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>font-weight</code></td>
+                        <td>Define el grosor de la fuente</td>
+                        <td><code>font-weight: bold;</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>line-height</code></td>
+                        <td>Altura de línea de texto</td>
+                        <td><code>line-height: 1.5;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Ejemplo de propiedades CSS</h2>
+            <p>Aquí tienes un ejemplo de cómo aplicar varias propiedades CSS a un párrafo y un título:</p>
+            <pre><code>
+&lt;style&gt;
+    body {
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+    }
+    h1 {
+        color: darkblue;
+        text-align: center;
+        border-bottom: 2px solid darkblue;
+    }
+    p {
+        color: darkgray;
+        font-size: 18px;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+&lt;/style&gt;
+            </code></pre>
+        </section>
+
+        <div style="text-align: center;">
+            <img src="css44.jpg" alt="" style="width: 600px;">
+        </div>
+
+        <section>
+            <h2>Selectores CSS</h2>
+            <p>Los selectores se utilizan para seleccionar los elementos a los que se aplicarán las reglas de estilo.
+                Algunos selectores comunes son:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.mi-clase</code></td>
+                        <td>Selector de clase</td>
+                        <td><code>.mi-clase { color: red; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>#mi-id</code></td>
+                        <td>Selector de ID</td>
+                        <td><code>#mi-id { font-weight: bold; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>div p</code></td>
+                        <td>Selector de descendientes</td>
+                        <td><code>div p { color: green; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>[type="text"]</code></td>
+                        <td>Selector de atributos</td>
+                        <td><code>input[type="text"] { border: 1px solid #ccc; }</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Pseudoelementos CSS</h2>
+            <p>Los pseudoelementos se utilizan para aplicar estilos a una parte de un elemento. Aquí hay algunos
+                ejemplos:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pseudoelemento</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>::before</code></td>
+                        <td>Inserta contenido antes del contenido del elemento</td>
+                        <td><code>p::before { content: "Nota: "; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>::after</code></td>
+                        <td>Inserta contenido después del contenido del elemento</td>
+                        <td><code>p::after { content: " Fin."; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>::first-letter</code></td>
+                        <td>Aplica estilos al primer carácter de un elemento</td>
+                        <td><code>p::first-letter { font-size: 2em; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>::first-line</code></td>
+                        <td>Aplica estilos a la primera línea de un elemento</td>
+                        <td><code>p::first-line { font-weight: bold; }</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Pseudoclases CSS</h2>
+            <p>Las pseudoclases se utilizan para aplicar estilos a un elemento en un estado específico. Aquí hay algunos
+                ejemplos:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pseudoclase</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>:hover</code></td>
+                        <td>Aplica estilos cuando el cursor está sobre el elemento</td>
+                        <td><code>a:hover { color: orange; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>:focus</code></td>
+                        <td>Aplica estilos cuando el elemento tiene el foco</td>
+                        <td><code>input:focus { border-color: blue; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>:nth-child(n)</code></td>
+                        <td>Selecciona el enésimo hijo de un elemento</td>
+                        <td><code>li:nth-child(2) { color: red; }</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>:first-child</code></td>
+                        <td>Selecciona el primer hijo de un elemento</td>
+                        <td><code>p:first-child { font-weight: bold; }</code></td>
+                    </tr>
+                </tbody>
+            </table>            
+        </section>
+        <br>
+        <div style="text-align: center;">
+            <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/6543d2ab72f6ae9b7005c815_estilo-externo.webp" alt="" style="width: 700px;">
+        </div>
+
+        <section>
+            <h2>No sabes como empezar, ¡Visita este curso en Youtube para aprender sobre CSS3! 😮</h2>
+            <div style="margin-bottom: 30px; text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I_RG3bNjTfQ?si=YQoHXt24HBWIpHQZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p>Página Web elaborada por:</p>
+        <p>&copy; Josmar Caleb Herrera Francisco</p>
+        <p>&copy; Lizzie Guadalupe Arciniega Romero</p>
+    </footer>
+</body>
+
+</html>

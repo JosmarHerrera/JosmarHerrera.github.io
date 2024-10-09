@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lobo</title>
+
+    <style>
+      body {
+        background-image: url("https://static.nationalgeographicla.com/files/styles/image_3200/public/canis-dirus-scene-color.jpg?w=1600&h=900");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header {
+        background-color: rgba(199, 179, 154, 0.8);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /*text-align: center;*/
+        padding: 10px 0;
+        z-index: 1; /* Para asegurar que la franja de contenido no cubra el encabezado */
+      }
+
+      .header h1 {
+        font-family: "Comic Sans MS", cursive;
+        font-size: 36px;
+        margin: 0;
+        margin-right: 73%;
+      }
+
+      .content {
+        position: absolute;
+        font-size: 15px;
+        top: 100px; /* Ajustar según el margen deseado */
+        bottom: 20px; /* Ajustar según el margen deseado */
+        width: 80%; /* Ajustar el ancho de acuerdo a tus preferencias */
+        background-color: rgba(212, 177, 129, 0.9);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        z-index: 0; /* Asegurar que la franja de contenido esté detrás del encabezado */
+        overflow: auto; /* Para permitir el desplazamiento si el contenido es demasiado grande */
+        display: flex; /* Mostrar como flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+      }
+
+      .tablaP {
+        width: 100%; /* La tabla ocupa el 100% del ancho del contenedor */
+        height: 100%; /* La tabla ocupa el 100% del alto del contenedor */
+      }
+
+      .tablaE {
+        width: 100%; /* La tabla ocupa el 100% del ancho del contenedor */
+        height: 100%; /* La tabla ocupa el 100% del alto del contenedor */
+      }
+
+      .content-inner {
+        width: 100%; /* Ajustar al ancho del contenedor */
+        height: 100%; /* Ajustar al alto del contenedor */
+      }
+
+      .imagen {
+        border-radius: 20px;
+      }
+
+      .footer {
+        color: black;
+        position: absolute;
+        bottom: 0;
+        left: 150px; /* Ajustar según el margen deseado */
+        padding: 1px;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <table class="tablaE">
+        <tr>
+          <td style="text-align: left">
+            <a href="zooprincipal.html">Regresar</a>
+          </td>
+          <td colspan="3" style="text-align: center">
+            <h1>Lobo</h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content">
+      <div class="content-inner">
+        <table class="tablaP">
+          <tr>
+            <td colspan="4" style="font-size: 25px"><b>Descripción:</b></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <p>
+                Los lobos son mamíferos carnívoros pertenecientes a la familia
+                Canidae y al género Canis, lo que los relaciona con los perros
+                domésticos. Se caracterizan por su apariencia robusta, pelaje
+                grueso y cola larga y peluda. Los lobos son animales sociales
+                que viven en manadas jerárquicas, lideradas por una pareja alfa.
+                Estas manadas pueden variar en tamaño, desde pequeños grupos
+                familiares hasta grandes agrupaciones de individuos. Son
+                depredadores altamente adaptables que se encuentran en una
+                variedad de hábitats, incluyendo bosques, praderas, tundras y
+                montañas.
+              </p>
+              <p>
+                A lo largo de la historia, los lobos han sido objeto de mitos y
+                temores, pero también son admirados por su inteligencia,
+                habilidades de caza y fuertes lazos sociales dentro de sus
+                manadas. Sin embargo, enfrentan amenazas como la pérdida de
+                hábitat, la caza y la fragmentación de poblaciones, lo que ha
+                llevado a la disminución de algunas subespecies y al estatus de
+                especie en peligro de extinción en ciertas áreas.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="font-size: 20px"><b>Curiosidades:</b></td>
+
+            <td colspan="2" style="font-size: 20px"><b>Alimentación:</b></td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="text-align: justify">
+              <ul>
+                <!-- Lista con puntos -->
+                <li>
+                  <b>Comunicación vocal: </b> Los lobos son conocidos por su
+                  amplio repertorio de vocalizaciones, que incluyen aullidos,
+                  ladridos, gruñidos y gemidos. Estas vocalizaciones les
+                  permiten comunicarse entre sí dentro de la manada y pueden
+                  escucharse a varios kilómetros de distancia.
+                </li>
+                <li>
+                  <b>Fuertes lazos familiares:</b> Los lobos forman fuertes
+                  lazos familiares dentro de sus manadas. La pareja alfa,
+                  compuesta por el macho y la hembra dominantes, lidera la
+                  manada y a menudo son los únicos que se reproducen. Los
+                  cachorros son cuidados y protegidos por toda la manada.
+                </li>
+                <li>
+                  <b>Sentido del olfato desarrollado:</b>
+                  Los lobos tienen un agudo sentido del olfato que les permite
+                  rastrear presas, detectar depredadores y comunicarse con otros
+                  lobos a través de marcas olfativas dejadas en el territorio.
+                </li>
+              </ul>
+            </td>
+
+            <td colspan="2" style="text-align: justify">
+              <ul>
+                <!-- Lista con puntos -->
+                <li>
+                  <b> Caza de presas grandes: </b>Los lobos son depredadores
+                  oportunistas que cazan una variedad de presas grandes, como
+                  ciervos, alces, caribúes, bisontes y cabras montesas.
+                </li>
+                <li>
+                  <b>Selección de presas débiles o enfermas: </b> Los lobos
+                  tienen una estrategia de caza eficiente donde seleccionan
+                  presas que están debilitadas, enfermas o ancianas, lo que les
+                  permite obtener alimento con menos esfuerzo y riesgo.
+                </li>
+                <li>
+                  <b>Caza cooperativa: </b> Los lobos cazan en manada,
+                  utilizando tácticas de caza cooperativa para aumentar las
+                  posibilidades de éxito. Trabajan juntos para rodear a la
+                  presa, coordinar sus movimientos y atacar en sincronía.
+                </li>
+                <li>
+                  <b>Consumo ocasional de carroña: </b>Los lobos no son
+                  exclusivamente cazadores y también pueden consumir carroña,
+                  alimentándose de animales muertos que encuentran en su
+                  territorio.
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                class="imagen"
+                width="130"
+                alt="Aqui deberia ir una imagen"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Front_view_of_a_resting_Canis_lupus_ssp.jpg/220px-Front_view_of_a_resting_Canis_lupus_ssp.jpg"
+              />
+            </td>
+
+            <td colspan="2" style="text-align: left">
+              <video width="300" height="150" controls muted loop>
+                <source src="multimedia/loboaullando.mp4" type="video/mp4" />
+                Tu navegador no admite el elemento
+                <code>video</code>.
+              </video>
+            </td>
+
+            <td style="text-align: left">
+              <img
+                class="imagen"
+                width="150"
+                alt="Aqui deberia ir un gif"
+                src="https://media1.tenor.com/m/GJZUmKh03dYAAAAd/emo.gif"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <p class="footer">Hilber Reyes Tecolapa DC &copy; 2024</p>
+  </body>
+</html>

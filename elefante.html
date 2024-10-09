@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elefante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvy-sPcr9u7VF8AsdBq7ZQ8m2Ia_PvaliE1w&s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad para desvanecer el fondo */
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .info img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="zoologico.html" class="back-button">Regresar al Zoológico</a>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="info">
+            <h2>Elefante</h2>
+            <img src="https://files.worldwildlife.org/wwfcmsprod/images/African_Elephant_Kenya_112367/story_full_width/qxyqxqjtu_WW187785.jpg" alt="Elefante" width="300" height="200">
+            <p>El elefante es el mamífero terrestre más grande del mundo y se caracteriza por su tamaño imponente y su trompa larga, que le permite realizar una variedad de tareas como alimentarse, beber agua y manipular objetos. Los elefantes tienen una piel gruesa y arrugada que les ayuda a regular su temperatura y a protegerse de los parásitos.</p>
+            <p>Existen tres especies principales de elefantes: el elefante africano de sabana, el elefante africano de bosque y el elefante asiático. Los elefantes africanos de sabana son los más grandes, con machos que pueden alcanzar hasta 4 metros de altura en el hombro y pesar hasta 12 toneladas. Los elefantes asiáticos son ligeramente más pequeños, pero también poseen una estructura impresionante.</p>
+            <p>Los elefantes tienen una esperanza de vida de 60 a 70 años en estado salvaje y viven en manadas matriarcales lideradas por una hembra dominante. Su trompa es una fusión de la nariz y el labio superior, equipada con músculos y nervios altamente desarrollados que le permiten una gran precisión y destreza. Los elefantes también son conocidos por sus complejas interacciones sociales y sus demostraciones de emociones como la tristeza y la alegría.</p>
+            <audio controls autoplay>
+                <source src="sonidos/elefante.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento <code>audio</code>.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
